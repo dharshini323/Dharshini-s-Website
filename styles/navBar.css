@@ -1,0 +1,36 @@
+
+.navBar {
+  position: fixed;
+  background-color: #F2E9E4;
+  top: 0px;
+  left: 0px;
+  right: 0px; 
+  height: 50px; 
+}
+
+.navBar ul {
+	display: flex;
+  list-style: none; 
+  align-items: center; 
+  height: 17px;
+  margin-left: 120px; 
+}
+
+.navBar li {
+  padding: 15px; 
+  font-size: 12px; 
+}
+
+.navBar a {
+  text-decoration: none; 
+}
+
+.name {
+  position: fixed; 
+  display: flex; 
+  align-items: center; 
+  height: 5px; 
+  font-size: 12px; 
+  padding: 15px
+  
+}
