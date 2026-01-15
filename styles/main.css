@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+  padding: 0; 
+}
+
+.engineer {
+  display: flex; 
+  width: 100%;
+  height: 100vh;
+}
+
+.software, .hardware {
+  display: flex; 
+  width: 50%; 
+  justify-content: center;  
+  align-items: center; 
+  text-align: center; 
+  font-size: 30px;
+  color: white; 
+
+  background-image: none; 
+  background-color: transparent; 
+  transition: width 5s ease; //smooth transition
+}
+
+.software:hover {
+  width: 70%; //expands on hover
+  background-image: url('../images/hardware1.png');
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+.hardware:hover {
+  width: 70%; 
+  background-image: url('../images/hardware1.png');
+  background-size: cover;
+  background-position: center;
+  color: #22223B; 
+}
+
+//when software expands, hardware shrinks
+.software:hover ~ .hardware {
+  width: 40%; 
+}
+
+h2 {
+  color: white; 
+  position: absolute;
+  text-align: center; 
+  top: 100px; 
+  width: 100%; 
+  z-index: 10; 
+}
+
